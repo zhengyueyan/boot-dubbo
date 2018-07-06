@@ -9,5 +9,7 @@
 
     <dubbo:application name="consumer"/>
     <dubbo:registry address="zookeeper://172.16.1.204:2181"/>
-    <dubbo:annotation package="com.zyy.web"/>
+    <dubbo:protocol name="dubbo" port="30880"/>
+    <dubbo:annotation package="com.zyy"/>
+    <dubbo:consumer check="false" />
 </beans>

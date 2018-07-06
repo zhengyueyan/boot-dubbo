@@ -9,7 +9,10 @@
 
     <dubbo:application name="provider"/>
     <!-- 注册中心的ip地址 -->
-    <dubbo:registry address="zookeeper://172.16.1.204:2181"/>
+    <dubbo:registry address="zookeeper://172.16.1.204:2181" />
     <!-- 扫描注解包路径，多个包用逗号分隔，不填pacakge表示扫描当前ApplicationContext中所有的类 -->
-    <dubbo:annotation package="com.zyy.service.impl"/>
+    <dubbo:annotation package="com.zyy"/>
+    <dubbo:consumer check="false" />
+
+
 </beans>

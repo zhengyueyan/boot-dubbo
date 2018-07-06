@@ -1,17 +1,19 @@
 package com.zyy.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.zyy.service.UserService;
+import com.zyy.service.Test2Service;
 
 /**
  * @Description:
  * @Author: 郑玥延
- * @Date: 11:01 2018/6/21
+ * @Date: 17:59 2018/7/4
  */
 @Service
-public class UserServiceImpl implements UserService {
+public class Test2ServiceImpl implements Test2Service{
+
     @Override
     public String sayHello(String str) {
-        return "hello "+ str;
+        return "hello !";
     }
+
 }
